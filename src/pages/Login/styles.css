@@ -1,0 +1,137 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.login-container {
+  background: linear-gradient(116.61deg, #731c1b 0.8%, #090b07 49.88%, #c82a2b 100%);
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.logo {
+  margin: 2% auto;
+  width: 260px;
+  z-index: 5;
+}
+
+.img-circulo {
+  bottom: 0;
+  opacity: 0.5;
+  position: absolute;
+}
+
+.img-nota {
+  position: absolute;
+}
+
+/* animação das notas */
+
+@keyframes go-back {
+
+  from { transform: translateX(0) scale(0.5); }
+
+  to { transform: translateX(0) scale(0.7); }
+}
+
+.img-nota-esquerda {
+  animation: go-back 0.3s infinite alternate;
+  width: 150px;
+
+}
+
+.img-nota-direita {
+  animation: go-back 0.4s infinite alternate;
+  right: 0;
+  top: 30%;
+}
+
+/* caixa escura */
+.login-form {
+  align-items: center;
+  background: rgba(7, 7, 5, 0.42);
+  border-radius: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  height: 65%;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  width: 50%;
+  z-index: 5;
+}
+
+/* Texto */
+.login-text {
+  color: white;
+  flex-basis: 100%;
+  font-weight: 300;
+  text-align: center;
+}
+
+.login-text h2 {
+  font-weight: 500;
+  margin: 10px 0;
+}
+
+.login-text p {
+  margin-top: 25px;
+  opacity: 0.7;
+}
+
+/* Só o formulário */
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+
+.text-form {
+  background: #363636;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  height: 54px;
+  margin: 10px;
+  width: 90%;
+}
+
+::placeholder {
+  color: white;
+  opacity: 0.8;
+  padding-left: 10px;
+}
+
+.btn-submit {
+  background: linear-gradient(90deg, #ba1c1d 0%, #770001 100%);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: 600;
+  height: 54px;
+  margin: 10px;
+  padding-left: 10px;
+  text-align: left;
+  transition: 0.5s;
+  width: 90%;
+}
+
+/* animação do botão */
+.btn-submit:hover, .btn-submit:focus {
+  background: #770001;
+}
+
+.icon {
+  margin-left: -32px;
+  margin-top: 30px;
+  position: absolute;
+  width: 12px;
+}
+
+
+.icon-buttom {
+  margin-left: -35px;
+  margin-top: 28px;
+  position: absolute;
+  width: 18px;
+}
