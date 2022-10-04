@@ -1,0 +1,46 @@
+.page-album {
+  background: linear-gradient(180deg, black 0%, #2f0202 100%);
+  color: white;
+  display: flex;
+  height: 100%;
+}
+
+/* Container de imagem e nome do album e nome do artista */
+.album-container1 {
+  align-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: 5%;
+  width: 30%;
+}
+
+.album-container1 img {
+  border-radius: 100%;
+  margin-bottom: 30px;
+  width: 60%;
+}
+
+.album-container1 h2 {
+  text-align: center;
+}
+
+.album-container1 p {
+  font-weight: 300;
+  margin-top: 10px;
+  opacity: 0.8;
+}
+
+/* Container de musicas */
+.album-container2 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 5%;
+  width: 45%;
+}
+
+.album-container2 ul {
+  padding: 0;
+  width: 100%;
+}
