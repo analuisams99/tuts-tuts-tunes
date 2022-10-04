@@ -1,0 +1,31 @@
+.music-card {
+  border-top: solid 1px white;
+  display: flex;
+  flex-flow: wrap row;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.music-card h4 {
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.audio-component {
+  margin: 0 5%;
+  width: 70%;
+}
+
+
+.checkbox {
+  visibility: hidden;
+}
+
+.icon-coracao {
+  cursor: pointer;
+  margin-left: 50%;
+  margin-top: 0;
+  width: 30px;
+}
