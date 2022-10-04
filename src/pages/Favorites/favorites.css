@@ -1,0 +1,46 @@
+.page-favorites {
+  background: linear-gradient(180deg, black 0%, #2f0202 100%);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 100%;
+}
+
+.favorites-container {
+  display: flex;
+  flex-direction: column;
+  margin: 20px auto;
+  width: 90%;
+}
+
+.favorites-h3 {
+  color: white;
+  font-size: 24px;
+  font-weight: 300;
+  margin-bottom: 30px;
+  margin-left: 20px;
+}
+
+.container-musics-fav {
+  margin: auto;
+  width: 70%;
+}
+
+.div-img-fav {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  width: 70%;
+}
+
+.container-image {
+  border-top: solid 1px white;
+  padding: 24px;
+}
+
+.img-fav {
+  border-radius: 100%;
+  margin-right: 3%;
+}
