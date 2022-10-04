@@ -1,8 +1,9 @@
 import React from 'react';
 import { Redirect } from 'react-router';
+import Loading from '../../components/Loading';
 // import Loading from '../components/Loading';
 import { createUser } from '../../services/userAPI';
-import './styles.css';
+import './login.css';
 
 const logo = require('../../assets/logo.png');
 const meioCirculo = require('../../assets/meioCirculo.png');
@@ -47,7 +48,7 @@ class Login extends React.Component {
     const { name, email, loading, enabledButton } = this.state;
     const MIN_CARACTHERS = 3;
     const emailRegex = /^\S+@\S+\.\S+$/.test(email);
-    // if (loading) return <Loading />;
+    if (loading) return <Loading />;
     if (enabledButton) return <Redirect to="/search" />;
     return (
       <div data-testid="page-login" className="login-container">
@@ -65,8 +66,9 @@ class Login extends React.Component {
         />
         <div className="login-form">
           <div className="login-text">
-            <h2>Faça login na sua conta</h2>
+            <h2>Bem vindo!</h2>
             <p>Ouça um pedacinho das musicas e escolha a sua favorita</p>
+            <p>Coloque seu nome e email para continuar:</p>
           </div>
 
           <form onSubmit={ this.handleClick } className="form">
@@ -110,7 +112,7 @@ class Login extends React.Component {
                 className="btn-submit"
                 type="submit"
                 id="login-btn-submit"
-                value="Faça login na sua conta"
+                value="Continuar"
                 data-testid="login-submit-button"
                 disabled={ name.length < MIN_CARACTHERS || !emailRegex }
               />
