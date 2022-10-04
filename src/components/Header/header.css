@@ -19,15 +19,15 @@
   background: linear-gradient(180deg, #ac1616 0%, #100203 100%);
   border-radius: 50px;
   display: flex;
-  gap: 20px;
-  height: 33.04px;
-  justify-content: flex-start;
+  height: 33px;
   margin: auto 1%;
   width: 198.7px;
 }
 
 .header-component h3 {
   color: white;
+  flex-grow: 2;
+  font-size: 16px;
   font-weight: 300;
   opacity: 0.7;
   text-align: center;
@@ -35,15 +35,20 @@
 
 .icon-header {
   border: solid transparent;
+  flex-grow: 0;
   height: 70%;
-  margin: auto 10px;
   object-fit: contain;
+  padding: 0 0 0 6px;
 }
 
 /* cabeçalho de navegação */
 .header-nav {
   display: flex;
-  height: 60px;
+  height: 40px;
+}
+
+.header-nav :nth-child( 3 ) {
+  margin-right: 4px;
 }
 
 .links-header {
@@ -54,7 +59,7 @@
   flex-grow: 1;
   font-size: 22px;
   font-weight: 500;
-  padding-top: 12px;
+  padding-top: 8px;
   text-align: center;
   text-decoration: none;
   transform: scale(1);
