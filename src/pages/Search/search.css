@@ -16,13 +16,14 @@
   border: none;
   border-radius: 6px;
   height: 40px;
+  outline: 0;
+  padding-left: 10px;
   width: 519px;
 }
 
 .page-search-main ::placeholder {
   color: black;
-  opacity: 0.8;
-  padding-left: 10px;
+  opacity: 0.5;
 }
 
 .icon-lupa {

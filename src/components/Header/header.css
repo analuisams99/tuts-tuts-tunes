@@ -10,7 +10,8 @@
 }
 
 .logo-header {
-  margin: 1%;
+  margin: 2%;
+  margin-left: 15px;
   width: 150px;
 }
 
@@ -70,6 +71,6 @@
   transform: scale(1.02);
 }
 
-.link-to-search {
+.selected-path {
   background: linear-gradient(180deg, #951416 0%, black 100%);
 }

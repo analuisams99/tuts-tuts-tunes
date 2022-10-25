@@ -88,13 +88,14 @@
   color: white;
   height: 54px;
   margin: 10px;
+  outline: 0;
+  padding-left: 10px;
   width: 90%;
 }
 
 .form ::placeholder {
   color: white;
-  opacity: 0.8;
-  padding-left: 10px;
+  opacity: 0.4;
 }
 
 .btn-submit {
