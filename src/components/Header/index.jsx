@@ -34,39 +34,55 @@ class Header extends React.Component {
 
   render() {
     const { userName, loading } = this.state;
+    const currentPathname = window.location.pathname;
+
     return (
-      <header data-testid="header-component" className="header">
+      <header className="header">
         {
           (loading)
             ? <Loading /> : (
               <main>
                 <section className="header-component">
-                  <img src={ logo.default } alt="logo" className="logo-header" />
-                  <div className="box-user">
+                  <Link to="/search">
+                    <img src={ logo.default } alt="logo" className="logo-header" />
+                  </Link>
+                  <Link to="/profile" className="box-user">
                     <img
                       src={ iconNameUser.default }
                       alt="icone de usuario"
                       className="icon-header"
                     />
-                    <h3 data-testid="header-user-name">{ userName }</h3>
-                  </div>
+                    <h3>{ userName }</h3>
+                  </Link>
                 </section>
                 <nav className="header-nav">
                   <Link
                     to="/search"
-                    className="links-header link-to-search"
+                    className={
+                      currentPathname === '/search'
+                        ? 'links-header selected-path'
+                        : 'links-header'
+                    }
                   >
                     Pesquisar
                   </Link>
                   <Link
                     to="/favorites"
-                    className="links-header link-to-favorites"
+                    className={
+                      currentPathname === '/favorites'
+                        ? 'selected-path links-header'
+                        : 'links-header'
+                    }
                   >
                     Favoritos
                   </Link>
                   <Link
                     to="/profile"
-                    className="links-header link-to-profile"
+                    className={
+                      currentPathname === '/profile'
+                        ? 'selected-path links-header'
+                        : 'links-header'
+                    }
                   >
                     Perfil
                   </Link>

@@ -51,7 +51,7 @@ class Login extends React.Component {
     if (loading) return <Loading />;
     if (enabledButton) return <Redirect to="/search" />;
     return (
-      <div data-testid="page-login" className="login-container">
+      <div className="login-container">
         <img src={ logo.default } alt="logo" className="logo" />
         <img src={ meioCirculo.default } alt="meio circulo" className="img-circulo" />
         <img
@@ -76,7 +76,6 @@ class Login extends React.Component {
               <input
                 className="text-form"
                 type="text"
-                data-testid="login-name-input"
                 id="login-name"
                 onChange={ this.handleChange }
                 name="name"
@@ -113,7 +112,6 @@ class Login extends React.Component {
                 type="submit"
                 id="login-btn-submit"
                 value="Continuar"
-                data-testid="login-submit-button"
                 disabled={ name.length < MIN_CARACTHERS || !emailRegex }
               />
               <img

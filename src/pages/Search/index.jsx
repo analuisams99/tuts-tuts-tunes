@@ -91,7 +91,7 @@ class Search extends React.Component {
     } = this.state;
 
     return (
-      <div data-testid="page-search">
+      <div>
         <Header />
         {loading ? <Loading /> : (
           <main className="page-search-main">
@@ -101,7 +101,6 @@ class Search extends React.Component {
                   className="search-text"
                   type="text"
                   id="search"
-                  data-testid="search-artist-input"
                   onChange={ this.handleChange }
                   value={ artistName }
                   name="artistName"
@@ -116,7 +115,6 @@ class Search extends React.Component {
               <button
                 className="search-button"
                 type="button"
-                data-testid="search-artist-button"
                 value="Procurar"
                 id="search-btn"
                 disabled={ artistName.length < MIN_CARACTHERS }
@@ -139,7 +137,6 @@ class Search extends React.Component {
                     <div key={ collectionId } className="results-item">
                       <Link
                         to={ `/album/${collectionId}` }
-                        data-testid={ `link-to-album-${collectionId}` }
                       >
                         <div className="carousel-item">
                           <img src={ artworkUrl100 } alt={ collectionName } />

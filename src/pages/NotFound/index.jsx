@@ -7,7 +7,7 @@ const logo = require('../../assets/logo.png');
 class NotFound extends React.Component {
   render() {
     return (
-      <div data-testid="page-not-found" className="page-not-found">
+      <div className="page-not-found">
         <img src={ logo.default } alt="logo" className="logo-page-not-found" />
         <div className="text-page">
           <h1>Ops!</h1>
