@@ -1,0 +1,54 @@
+.profile-body {
+  background: black;
+  height: 130vh;
+}
+
+.profile-container {
+  background: linear-gradient(180deg, #951416 -100%, black 100%);
+  border-radius: 80px;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  height: 70%;
+  margin: 20px auto;
+  padding: 3%;
+  width: 45%;
+}
+
+.profile-content {
+  width: 50%;
+}
+
+.profile-edit-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.img-profile {
+  width: 60%;
+}
+
+.link {
+  background: linear-gradient(180deg, #951416 0%, black 100%);
+  border-radius: 5px;
+  color: white;
+  font-weight: 300;
+  padding: 10px;
+  text-decoration: none;
+  transform: scale(1);
+  transition: transform 0.2s;
+}
+
+.profile-container h4 {
+  font-size: 18px;
+  margin: 20px 0 5px 10px;
+}
+
+.profile-container p {
+  font-weight: 300;
+  margin-left: 10px;
+
+}
+
