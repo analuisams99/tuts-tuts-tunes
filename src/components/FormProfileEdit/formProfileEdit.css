@@ -1,0 +1,60 @@
+.profile-edit-container {
+  background: black;
+  color: white;
+  height: 100vh;
+  padding-top: 20px;
+}
+
+.profile-edit-form {
+  align-items: center;
+  background: linear-gradient(180deg, #951416 -100%, black 100%);
+  border-radius: 80px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  height: 70%;
+  margin: auto;
+  width: 45%;
+}
+
+.img-profile-edit {
+  border-radius: 100%;
+  cursor: default;
+  height: 70%;
+  width: 80%;
+}
+
+.profile-edit-form label {
+  align-items: center;
+  display: flex;
+  font-size: 18px;
+  font-weight: 300;
+  justify-content: center;
+  margin: auto;
+}
+
+.profile-edit-form label:nth-child( 1 ) {
+  height: 200px;
+  width: 200px;
+}
+
+.profile-edit-form [ type = 'text' ], [ type = 'email' ] {
+  background: #cfcfcf;
+  border: none;
+  border-radius: 8px;
+  height: 30px;
+  margin-left: 10px;
+  outline: 0;
+  padding-left: 10px;
+}
+
+.submit-input {
+  background: linear-gradient(180deg, #951416 0%, black 100%);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: grab;
+  font-weight: 300;
+  margin-top: 10px;
+  padding: 10px;
+}
