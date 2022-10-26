@@ -59,11 +59,11 @@ class Profile extends React.Component {
         </div>
         <div className="profile-content">
           <h4>Nome</h4>
-          <p>{ userName }</p>
+          <p>{userName}</p>
           <h4>Email</h4>
-          <p>{ userEmail }</p>
+          <p>{userEmail}</p>
           <h4>Descrição</h4>
-          <p>{ userDescription === '' ? '...' : userDescription }</p>
+          <p>{userDescription === '' ? '...' : userDescription}</p>
         </div>
       </div>
     );
@@ -72,11 +72,13 @@ class Profile extends React.Component {
   render() {
     const { loading } = this.state;
     return (
-      <div className="profile-body">
-        <Header />
-        { loading ? <Loading /> : this.renderUserName() }
+      <>
+        <div className="profile-body">
+          <Header />
+          {loading ? <Loading /> : this.renderUserName()}
+        </div>
         <Footer />
-      </div>
+      </>
     );
   }
 }
