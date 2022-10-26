@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Footer from '../../components/Footer';
 import Header from '../../components/Header';
 import Loading from '../../components/Loading';
 import { getUser } from '../../services/userAPI';
@@ -42,7 +43,7 @@ class Profile extends React.Component {
     const { userName, userEmail, userDescription, userImg } = this.state;
     return (
       <div className="profile-container">
-        <div className="profile-edit-container">
+        <div className="profile-edit-box">
           <img
             src={
               userImg === ''
@@ -74,6 +75,7 @@ class Profile extends React.Component {
       <div className="profile-body">
         <Header />
         { loading ? <Loading /> : this.renderUserName() }
+        <Footer />
       </div>
     );
   }

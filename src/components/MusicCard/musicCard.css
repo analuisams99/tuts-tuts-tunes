@@ -2,20 +2,21 @@
   border-top: solid 1px white;
   display: flex;
   flex-flow: wrap row;
-  margin-bottom: 10px;
+  margin-bottom: 9.5px;
   padding: 10px;
-  width: 100%;
+  width: 95%;
 }
 
 .music-card h4 {
   font-size: 16px;
   font-weight: 400;
   margin-bottom: 10px;
+  margin-left: 3%;
   width: 100%;
 }
 
 .audio-component {
-  margin: 0 5%;
+  margin: 0 6%;
   width: 70%;
 }
 
@@ -28,4 +29,24 @@
   margin-left: 50%;
   margin-top: 0;
   width: 30px;
+}
+
+@media screen and ( max-width : 426px ) {
+
+  .music-card h4 {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .icon-coracao {
+    cursor: pointer;
+    margin: 10% 150%;
+  }
+
+  .audio-component {
+    margin: 0;
+    min-width: 100%;
+  }
 }
