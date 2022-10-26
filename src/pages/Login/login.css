@@ -2,7 +2,7 @@
   background: linear-gradient(116.61deg, #731c1b 0.8%, #090b07 49.88%, #c82a2b 100%);
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: 96vh;
 }
 
 .logo {
@@ -49,7 +49,7 @@
   border-radius: 20px;
   display: flex;
   flex-wrap: wrap;
-  height: 65%;
+  height: 70%;
   justify-content: space-evenly;
   margin: 0 auto;
   width: 50%;
@@ -79,6 +79,41 @@
   display: flex;
   flex-direction: column;
   width: 60%;
+}
+
+@media screen and ( max-width : 767px ) {
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .icon-buttom {
+    margin-left: -40px;
+    margin-top: 30px;
+    position: absolute;
+    width: 18px;
+  }
+
+  .login-form {
+    align-items: center;
+    background: rgba(7, 7, 5, 0.42);
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    height: 70%;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    width: 80%;
+    z-index: 5;
+  }
+
+  .login-text p {
+    margin-top: 0;
+    opacity: 0.7;
+  }
+
 }
 
 .text-form {
@@ -117,17 +152,35 @@
   background: #770001;
 }
 
+@media screen and ( max-width : 400px ) {
+
+  .icon-buttom {
+    visibility: hidden;
+  }
+
+  .btn-submit {
+    background: linear-gradient(90deg, #ba1c1d 0%, #770001 100%);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: 600;
+    height: 54px;
+    margin: 10px;
+    padding-left: 10px;
+    text-align: center;
+    transition: 0.5s;
+    width: 90%;
+  }
+}
+
 .icon {
-  margin-left: -32px;
-  margin-top: 30px;
-  position: absolute;
+  margin-left: -35px;
   width: 12px;
 }
 
-
 .icon-buttom {
-  margin-left: -35px;
-  margin-top: 28px;
+  margin-left: -40px;
+  margin-top: 30px;
   position: absolute;
   width: 18px;
 }
