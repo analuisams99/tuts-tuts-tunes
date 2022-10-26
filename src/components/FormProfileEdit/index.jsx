@@ -76,6 +76,7 @@ class FormProfileEdit extends Component {
               value={ image }
               onChange={ this.handleChange }
               id="imgLink"
+              className="label-profile-edit"
               placeholder="Adicione um link..."
               required
             />
@@ -85,6 +86,7 @@ class FormProfileEdit extends Component {
             <input
               type="text"
               name="name"
+              className="label-profile-edit"
               value={ name }
               id="inputName"
               onChange={ this.handleChange }
@@ -96,6 +98,7 @@ class FormProfileEdit extends Component {
             <input
               type="email"
               name="email"
+              className="label-profile-edit"
               value={ email }
               id="inputEmail"
               onChange={ this.handleChange }
@@ -107,6 +110,7 @@ class FormProfileEdit extends Component {
             <input
               type="text"
               name="description"
+              className="label-profile-edit"
               value={ description }
               id="inputDescription"
               onChange={ this.handleChange }

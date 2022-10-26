@@ -38,7 +38,7 @@
   width: 200px;
 }
 
-.profile-edit-form [ type = 'text' ], [ type = 'email' ] {
+.label-profile-edit {
   background: #cfcfcf;
   border: none;
   border-radius: 8px;
