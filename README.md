@@ -2,6 +2,8 @@
 
 ## :mag_right: Descrição
   Aplicação capaz de reproduzir músicas das mais variadas bandas e artistas. Você também poderá criar uma lista de músicas favoritas e editar o seu perfil.
+  
+## :star2: Site no ar -> [Clique aqui para acessar](https://tuts-tuts-tunes.vercel.app/).
 
 ## :hammer_and_wrench: Tecnologias
   - _React_
