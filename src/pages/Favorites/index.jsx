@@ -1,5 +1,4 @@
 import React from 'react';
-import Footer from '../../components/Footer';
 import Header from '../../components/Header';
 import Loading from '../../components/Loading';
 import MusicCard from '../../components/MusicCard';
@@ -79,13 +78,10 @@ class Favorites extends React.Component {
   render() {
     const { loading } = this.state;
     return (
-      <>
-        <div className="page-favorites">
-          <Header />
-          { loading ? <Loading /> : this.renderFavorites() }
-        </div>
-        <Footer />
-      </>
+      <div className="page-favorites">
+        <Header />
+        { loading ? <Loading /> : this.renderFavorites() }
+      </div>
     );
   }
 }

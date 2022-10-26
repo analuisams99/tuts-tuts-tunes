@@ -9,7 +9,6 @@ import Loading from '../../components/Loading';
 import MusicCard from '../../components/MusicCard';
 
 import './album.css';
-import Footer from '../../components/Footer';
 
 class Album extends React.Component {
   constructor(props) {
@@ -85,7 +84,6 @@ class Album extends React.Component {
               </div>
             </div>
           )}
-        <Footer />
       </div>
     );
   }

@@ -6,7 +6,6 @@ import './search.css';
 import Header from '../../components/Header';
 import Loading from '../../components/Loading';
 import searchAlbumsAPI from '../../services/searchAlbumsAPI';
-import Footer from '../../components/Footer';
 
 const iconLupa = require('../../assets/iconLupa.png');
 const iconSeta = require('../../assets/iconSeta.png');
@@ -178,7 +177,6 @@ class Search extends React.Component {
             </section>
           </main>
         )}
-        <Footer />
       </div>
     );
   }

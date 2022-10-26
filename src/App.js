@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import Footer from './components/Footer';
 
 import Album from './pages/Album';
 import Favorites from './pages/Favorites';
@@ -24,6 +25,7 @@ class App extends React.Component {
             <Route exact path="" component={ NotFound } />
           </Switch>
         </BrowserRouter>
+        <Footer />
       </main>
     );
   }

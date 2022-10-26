@@ -1,5 +1,4 @@
 import React from 'react';
-import Footer from '../../components/Footer';
 import FormProfileEdit from '../../components/FormProfileEdit';
 import Header from '../../components/Header';
 
@@ -9,7 +8,6 @@ class ProfileEdit extends React.Component {
       <div>
         <Header />
         <FormProfileEdit />
-        <Footer />
       </div>
     );
   }
