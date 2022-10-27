@@ -20,6 +20,8 @@
   - " " - Caso não exista uma rota, ele te retornará 'Pagina não encontrada'
   
 ## :sparkles: Demonstração da aplicação 
+![preview](https://github.com/analuisams99/tuts-tuts-tunes/blob/main/public/preview.gif)
+
 
 ## :computer: Acessando o repositório:
 
